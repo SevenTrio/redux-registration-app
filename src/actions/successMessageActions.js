@@ -1,8 +1,14 @@
 import * as types from '../constants/actionsTypes';
 
 export const showSuccessMessage = () => {
-    return {
-        type: types.successMessage.SHOW,
+    return (dispatch) => {
+        dispatch({
+            type: types.successMessage.SHOW,
+        });
+
+        setTimeout(() => {
+            dispatch(hideSuccessMessage());
+        }, 3000)
     };
 }
 

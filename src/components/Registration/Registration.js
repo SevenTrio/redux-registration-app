@@ -133,7 +133,6 @@ const Registration = ({ user, errors, showMessage, handleChange, handleValidateF
                 message="I love snacks"
             >
                 <Alert
-                    onClose={handleMessageClose}
                     severity="success"
                     elevation={6}
                     variant="filled"
