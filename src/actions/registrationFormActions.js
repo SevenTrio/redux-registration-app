@@ -86,7 +86,6 @@ export const validateField = (field) => {
 export const submitForm = () => {
     return (dispatch, getState) => {
         const state = getState();
-        console.log(state);
         let isFormValid = true;
 
         for (let name in state.registrationForm.validated) {
