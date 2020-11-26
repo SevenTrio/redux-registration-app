@@ -1,35 +1,23 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { loadUsersFromStorage } from "../../actions/usersActions";
 
 import App from "./App";
 
 class AppContainer extends Component {
-    state = {
-        users: [],
-    }
-
     componentDidMount() {
-        if (localStorage.hasOwnProperty("users")) {
-            let users = JSON.parse(localStorage.getItem("users"));
-            this.setState((prevState) => ({
-                users: [...prevState.users, ...users],
-            }))
-        }
+        this.props.loadUsersFromStorage()
     }
-
-    addUser = (user) => {
-        this.setState(
-            (prevState) => ({
-                users: [...prevState.users, { ...user }],
-            }),
-            () => {
-                localStorage.setItem("users", JSON.stringify(this.state.users))
-            }
-        );
-    };
 
     render() {
-        return <App addUser={this.addUser} users={this.state.users}/>
+        return <App/>
     }
 }
 
-export default AppContainer;
+const mapDispatchToProps = dispatch => {
+    return {
+        loadUsersFromStorage: () => dispatch(loadUsersFromStorage()),
+    };
+};
+
+export default connect(null, mapDispatchToProps)(AppContainer);

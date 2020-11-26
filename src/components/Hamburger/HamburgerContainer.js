@@ -1,26 +1,22 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux';
+import { hideMenu, showMenu } from "../../actions/menuActions";
 
 import Hamburger from "./Hamburger";
 
 class HamburgerContainer extends Component {
-    state = {
-        open: false,
-    }
-
     handleMenuButtonClick = () => {
-        this.setState((prevState) => ({ open: !prevState.open }));
+        this.props.open ? this.props.hideMenu() : this.props.showMenu();
     };
 
     handleClose = () => {
-        if (this.state.open) {
-            this.setState({ open: false });
-        }
+        if (this.props.open) this.props.hideMenu();
     }
 
     render() {
         return (
             <Hamburger
-                open={this.state.open}
+                open={this.props.open}
                 handleMenuButtonClick={this.handleMenuButtonClick}
                 handleClose={this.handleClose}
             />
@@ -28,4 +24,15 @@ class HamburgerContainer extends Component {
     }
 }
 
-export default HamburgerContainer;
+const mapStateToProps = (state) => ({
+    open: state.menu.active
+});
+
+const mapDispatchToProps = dispatch => {
+    return {
+        showMenu: () => dispatch(showMenu()),
+        hideMenu: () => dispatch(hideMenu()),
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(HamburgerContainer);

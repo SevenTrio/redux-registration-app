@@ -1,13 +1,13 @@
 import React from "react";
 import './Header.scss'
 
-import HamburgerContainer from "../Hamburger/HamburgerContainer";
+import Hamburger from "../Hamburger/HamburgerContainer";
 
 const Header = () => {
     return (
         <div className="Header">
             <div className="Header-Wrapper">
-                <HamburgerContainer/>
+                <Hamburger/>
             </div>
         </div>
     );

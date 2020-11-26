@@ -14,7 +14,7 @@ import Snackbar from '@material-ui/core/Snackbar';
 import Alert from '@material-ui/lab/Alert';
 import './Registration.scss';
 
-const Registration = ({ user, errors, handleChange, handleSubmit, validateField, clearError, showMessage, handleMessageClose}) => {
+const Registration = ({ user, errors, showMessage, handleChange, handleValidateField, handleClearError, handleSubmit, handleMessageClose }) => {
     const inputTransitionDuration = 300;
 
     const inputDefaultStyle = {
@@ -36,9 +36,9 @@ const Registration = ({ user, errors, handleChange, handleSubmit, validateField,
                     className="Registration-TextField"
                     name="userName"
                     value={user.userName}
-                    onFocus={clearError}
+                    onFocus={handleClearError}
                     onChange={handleChange}
-                    onBlur={validateField}
+                    onBlur={handleValidateField}
                     label="User name"
                     variant="outlined"
                     error={!!errors.userName.length}
@@ -51,15 +51,14 @@ const Registration = ({ user, errors, handleChange, handleSubmit, validateField,
                     error={!!errors.userGender.length}
                 >
                     <InputLabel id="userGenderLabel">Gender</InputLabel>
-
                     <Select
                         labelId="userGenderLabel"
                         id="userGender"
                         name="userGender"
                         value={user.userGender}
-                        onFocus={clearError}
+                        onFocus={handleClearError}
                         onChange={handleChange}
-                        onBlur={validateField}
+                        onBlur={handleValidateField}
                         label="Gender"
                     >
                         <MenuItem value={"Male"}>Male</MenuItem>
@@ -73,9 +72,9 @@ const Registration = ({ user, errors, handleChange, handleSubmit, validateField,
                     className="Registration-TextField"
                     name="userCreditCard"
                     value={user.userCreditCard}
-                    onFocus={clearError}
+                    onFocus={handleClearError}
                     onChange={handleChange}
-                    onBlur={validateField}
+                    onBlur={handleValidateField}
                     label="Credit Card"
                     variant="outlined"
                     InputProps={{
@@ -131,7 +130,6 @@ const Registration = ({ user, errors, handleChange, handleSubmit, validateField,
             <Snackbar
                 open={showMessage}
                 onClose={handleMessageClose}
-                autoHideDuration={5000}
                 message="I love snacks"
             >
                 <Alert

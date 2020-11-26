@@ -15,7 +15,6 @@ const dateOptions = {
 };
 
 function ClientList({ userList }) {
-    console.log(userList);
     return (
         <div className="ClientList">
             <h1 className="ClientList-Heading">User list</h1>
@@ -33,10 +32,10 @@ function ClientList({ userList }) {
                         </thead>
                         <tbody>
                             {userList.map(user =>
-                                <tr key={new Date(user.timeStamp).toString()} className="ClientList-TableRow">
+                                <tr key={user.id} className="ClientList-TableRow">
                                     <td className="ClientList-TableData">{user.userName}</td>
                                     <td className="ClientList-TableData">{user.userGender}</td>
-                                    <td className="ClientList-TableData">{new Date(user.timeStamp).toLocaleString("en-US", dateOptions)}</td>
+                                    <td className="ClientList-TableData">{user.timeStamp.toLocaleString("en-US", dateOptions)}</td>
                                     <td className="ClientList-TableData">
                                         {user.withLoyaltyProgram
                                             ? <CheckIcon className="ClientList-CheckIcon"/>

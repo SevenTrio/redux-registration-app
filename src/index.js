@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import './scss/main.scss'
 
-import AppContainer from "./components/App/AppContainer";
+import store from './store';
+import App from "./components/App/AppContainer";
 
 ReactDOM.render(
     <React.StrictMode>
-        <AppContainer />
+        <Provider store={store}>
+            <App />
+        </Provider>
     </React.StrictMode>,
     document.getElementById('root')
 );
