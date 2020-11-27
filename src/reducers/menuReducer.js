@@ -1,7 +1,7 @@
 import initialState from '../constants/initialState';
 import * as types from '../constants/actionsTypes';
 
-export default (state = initialState.menu, action) => {
+const menuReducer = (state = initialState.menu, action) => {
     switch (action.type) {
         case types.menu.SHOW:
             return {
@@ -19,3 +19,5 @@ export default (state = initialState.menu, action) => {
             return state;
     }
 };
+
+export default menuReducer;

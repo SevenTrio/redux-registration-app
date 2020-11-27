@@ -1,7 +1,7 @@
 import initialState from '../constants/initialState';
 import * as types from '../constants/actionsTypes';
 
-export default (state = initialState.registrationForm, action) => {
+const registrationFormReducer = (state = initialState.registrationForm, action) => {
     switch (action.type) {
         case types.registrationForm.SET_FIELD_VALUE:
             return {
@@ -31,3 +31,5 @@ export default (state = initialState.registrationForm, action) => {
             return state;
     }
 };
+
+export default registrationFormReducer;

@@ -1,7 +1,7 @@
 import initialState from '../constants/initialState';
 import * as types from '../constants/actionsTypes';
 
-export default (state = initialState.successMessage, action) => {
+const successMessageReducer = (state = initialState.successMessage, action) => {
     switch (action.type) {
         case types.successMessage.SHOW:
             return {
@@ -19,3 +19,5 @@ export default (state = initialState.successMessage, action) => {
             return state;
     }
 };
+
+export default successMessageReducer;

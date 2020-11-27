@@ -26,6 +26,11 @@ const initialState = {
     successMessage: {
         show: false
     },
+    joke: {
+        value: "",
+        isLoading: false,
+        isError: false,
+    }
 };
 
 export default initialState;

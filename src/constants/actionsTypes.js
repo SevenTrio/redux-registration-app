@@ -19,3 +19,10 @@ export const successMessage = {
     SHOW: 'registration-app/successMessage/show',
     HIDE: 'registration-app/successMessage/hide',
 }
+
+export const joke = {
+    LOAD_START: 'registration-app/joke/load/start',
+    LOAD_SUCCESS: 'registration-app/joke/load/success',
+    LOAD_FAIL: 'registration-app/joke/load/fail',
+    SET: 'registration-app/joke/set',
+}

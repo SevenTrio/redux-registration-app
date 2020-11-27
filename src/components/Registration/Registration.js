@@ -12,9 +12,20 @@ import CardInput from '../CardInput/CardInput'
 import {Transition} from "react-transition-group";
 import Snackbar from '@material-ui/core/Snackbar';
 import Alert from '@material-ui/lab/Alert';
+import Joke from '../Joke/JokeContainer'
 import './Registration.scss';
 
-const Registration = ({ user, errors, showMessage, handleChange, handleValidateField, handleClearError, handleSubmit, handleMessageClose }) => {
+const Registration = ({
+    user,
+    errors,
+    showMessage,
+    joke,
+    handleChange,
+    handleValidateField,
+    handleClearError,
+    handleSubmit,
+    handleMessageClose,
+}) => {
     const inputTransitionDuration = 300;
 
     const inputDefaultStyle = {
@@ -126,6 +137,8 @@ const Registration = ({ user, errors, showMessage, handleChange, handleValidateF
                     Create user
                 </Button>
             </form>
+
+            <Joke />
 
             <Snackbar
                 open={showMessage}
