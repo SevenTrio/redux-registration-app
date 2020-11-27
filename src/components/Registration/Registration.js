@@ -10,21 +10,17 @@ import Switch from '@material-ui/core/Switch';
 import Button from '@material-ui/core/Button';
 import CardInput from '../CardInput/CardInput'
 import {Transition} from "react-transition-group";
-import Snackbar from '@material-ui/core/Snackbar';
-import Alert from '@material-ui/lab/Alert';
+import SuccessMessage from "../SuccessMessage/SuccessMessageContainer";
 import Joke from '../Joke/JokeContainer'
 import './Registration.scss';
 
 const Registration = ({
     user,
     errors,
-    showMessage,
-    joke,
     handleChange,
     handleValidateField,
     handleClearError,
     handleSubmit,
-    handleMessageClose,
 }) => {
     const inputTransitionDuration = 300;
 
@@ -140,19 +136,8 @@ const Registration = ({
 
             <Joke />
 
-            <Snackbar
-                open={showMessage}
-                onClose={handleMessageClose}
-                message="I love snacks"
-            >
-                <Alert
-                    severity="success"
-                    elevation={6}
-                    variant="filled"
-                >
-                    User created successfully!
-                </Alert>
-            </Snackbar>
+            <SuccessMessage />
+
         </div>
     );
 }

@@ -6,7 +6,6 @@ import {
     validateField,
     submitForm,
 } from "../../actions/registrationFormActions";
-import { hideSuccessMessage } from "../../actions/successMessageActions";
 
 import Registration from "./Registration";
 
@@ -30,24 +29,15 @@ class RegistrationContainer extends Component {
         this.props.submitForm();
     };
 
-    handleMessageClose = (event, reason) => {
-        if (reason === 'clickaway') {
-            return;
-        }
-        this.props.hideSuccessMessage()
-    };
-
     render() {
         return (
             <Registration 
                 user={this.props.user}
                 errors={this.props.errors}
-                showMessage={this.props.showSuccessMessage}
                 handleChange={this.handleChange}
                 handleValidateField={this.handleValidateField}
                 handleClearError={this.handleClearError}
                 handleSubmit={this.handleSubmit}
-                handleMessageClose={this.handleMessageClose}
             />
         );
     }
@@ -56,7 +46,6 @@ class RegistrationContainer extends Component {
 const mapStateToProps = (state) => ({
     user: state.registrationForm.user,
     errors: state.registrationForm.errors,
-    showSuccessMessage: state.successMessage.show,
 });
 
 const mapDispatchToProps = dispatch => {
@@ -65,7 +54,6 @@ const mapDispatchToProps = dispatch => {
         clearFieldError: (field) => dispatch(clearFieldError(field)),
         validateField: (field) => dispatch(validateField(field)),
         submitForm: () => dispatch(submitForm()),
-        hideSuccessMessage: () => dispatch(hideSuccessMessage()),
     };
 };
 
