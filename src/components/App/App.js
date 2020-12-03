@@ -7,12 +7,12 @@ import './App.scss'
 import Header from "../Header/Header";
 import Routes from "../Routes/Routes";
 
-const App = ({ addUser, users }) => {
+const App = () => {
     return (
         <Router>
             <Header/>
             <div className="App-ContentWrapper">
-                <Routes addUser={addUser} userList={users}/>
+                <Routes/>
             </div>
         </Router>
     )
