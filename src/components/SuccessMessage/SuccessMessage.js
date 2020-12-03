@@ -1,8 +1,11 @@
 import React from "react";
 import Alert from "@material-ui/lab/Alert";
 import Snackbar from "@material-ui/core/Snackbar";
+import { useSelector } from "react-redux";
 
-const SuccessMessage = ({ show }) => {
+const SuccessMessage = () => {
+    const show = useSelector((state) => state.successMessage.show);
+
     return (
         <Snackbar
             open={show}

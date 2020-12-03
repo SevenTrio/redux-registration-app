@@ -1,4 +1,12 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import {
+    setFieldValue,
+    clearFieldError,
+    validateField,
+    submitForm,
+} from "../../actions/registrationFormActions";
+import { Transition } from "react-transition-group";
 import TextField from '@material-ui/core/TextField';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -9,19 +17,34 @@ import FormHelperText from '@material-ui/core/FormHelperText'
 import Switch from '@material-ui/core/Switch';
 import Button from '@material-ui/core/Button';
 import CardInput from '../CardInput/CardInput'
-import {Transition} from "react-transition-group";
-import SuccessMessage from "../SuccessMessage/SuccessMessageContainer";
-import Joke from '../Joke/JokeContainer'
+import SuccessMessage from "../SuccessMessage/SuccessMessage";
+import Joke from '../Joke/Joke'
 import './Registration.scss';
 
-const Registration = ({
-    user,
-    errors,
-    handleChange,
-    handleValidateField,
-    handleClearError,
-    handleSubmit,
-}) => {
+const Registration = () => {
+    const dispatch = useDispatch();
+    const user = useSelector((state) => state.registrationForm.user);
+    const errors = useSelector((state) => state.registrationForm.errors);
+
+    const handleChange = (e) => {
+        const field = e.target;
+        dispatch(setFieldValue(field));
+    };
+
+    const handleValidateField = (e) => {
+        const field = e.target;
+        dispatch(validateField(field));
+    }
+
+    const handleClearError = (e) => {
+        const field = e.target;
+        dispatch(clearFieldError(field));
+    }
+
+    const handleSubmit = () => {
+        dispatch(submitForm());
+    };
+
     const inputTransitionDuration = 300;
 
     const inputDefaultStyle = {

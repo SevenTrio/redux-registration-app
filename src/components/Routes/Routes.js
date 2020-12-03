@@ -1,8 +1,7 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
-
-import Registration from "../Registration/RegistrationContainer";
-import ClientList from "../ClientList/ClientListContainer";
+import Registration from "../Registration/Registration";
+import ClientList from "../ClientList/ClientList";
 import AboutMe from "../AboutMe/AboutMe";
 
 const Routes = () => {

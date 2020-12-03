@@ -2,12 +2,11 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom";
 import { loadUsersFromStorage } from "../../actions/usersActions";
-import './App.scss'
-
 import Header from "../Header/Header";
 import Routes from "../Routes/Routes";
+import './App.scss'
 
-const App = ({ addUser, users }) => {
+const App = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -19,7 +18,7 @@ const App = ({ addUser, users }) => {
         <Router>
             <Header/>
             <div className="App-ContentWrapper">
-                <Routes addUser={addUser} userList={users}/>
+                <Routes/>
             </div>
         </Router>
     )

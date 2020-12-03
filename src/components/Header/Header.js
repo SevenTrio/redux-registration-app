@@ -1,7 +1,6 @@
 import React from "react";
 import './Header.scss'
-
-import Hamburger from "../Hamburger/HamburgerContainer";
+import Hamburger from "../Hamburger/Hamburger";
 
 const Header = () => {
     return (

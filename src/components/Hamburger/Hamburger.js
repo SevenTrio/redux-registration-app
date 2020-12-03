@@ -1,11 +1,23 @@
 import React, { Fragment } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { hideMenu, showMenu } from "../../actions/menuActions";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
+import Blackout from "../Blackout/Blackout";
+import Menu from '../Menu/Menu'
 import './Hamburger.scss'
 
-import Menu from '../Menu/Menu'
-import Blackout from "../Blackout/Blackout";
+const Hamburger = () => {
+    const dispatch = useDispatch();
+    const open = useSelector((state) => state.menu.active);
 
-const Hamburger = ({ open, handleMenuButtonClick, handleClose }) => {
+    const handleMenuButtonClick = () => {
+        open ? dispatch(hideMenu()) : dispatch(showMenu());
+    };
+
+    const handleClose = () => {
+        if (open) dispatch(hideMenu());
+    }
+
     return (
         <Fragment>
             <ClickAwayListener onClickAway={handleClose}>

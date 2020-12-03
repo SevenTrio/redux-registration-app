@@ -1,6 +1,7 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 import CheckIcon from '@material-ui/icons/CheckRounded';
-import {NavLink} from "react-router-dom";
 import emptyImage from './empty.png'
 import './ClientList.scss'
 
@@ -14,7 +15,9 @@ const dateOptions = {
     second: 'numeric'
 };
 
-function ClientList({ userList }) {
+function ClientList() {
+    const userList = useSelector((state) => state.users);
+
     return (
         <div className="ClientList">
             <h1 className="ClientList-Heading">User list</h1>
