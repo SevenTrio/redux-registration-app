@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/redux-registration-app/static/css/main.cf9dc336.chunk.css",
+    "main.js": "/redux-registration-app/static/js/main.5dad234e.chunk.js",
+    "main.js.map": "/redux-registration-app/static/js/main.5dad234e.chunk.js.map",
+    "runtime-main.js": "/redux-registration-app/static/js/runtime-main.1d65dbe9.js",
+    "runtime-main.js.map": "/redux-registration-app/static/js/runtime-main.1d65dbe9.js.map",
+    "static/js/2.98665da8.chunk.js": "/redux-registration-app/static/js/2.98665da8.chunk.js",
+    "static/js/2.98665da8.chunk.js.map": "/redux-registration-app/static/js/2.98665da8.chunk.js.map",
+    "index.html": "/redux-registration-app/index.html",
+    "static/css/main.cf9dc336.chunk.css.map": "/redux-registration-app/static/css/main.cf9dc336.chunk.css.map",
+    "static/js/2.98665da8.chunk.js.LICENSE.txt": "/redux-registration-app/static/js/2.98665da8.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/redux-registration-app/static/media/background.f32775a0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d65dbe9.js",
+    "static/js/2.98665da8.chunk.js",
+    "static/css/main.cf9dc336.chunk.css",
+    "static/js/main.5dad234e.chunk.js"
+  ]
+}
