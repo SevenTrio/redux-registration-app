@@ -1,8 +1,8 @@
 {
-  "name": "registration-app",
+  "name": "redux-registration-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://SevenTrio.github.io/registration-app",
+  "homepage": "http://SevenTrio.github.io/redux-registration-app",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/lab": "^4.0.0-alpha.56",
