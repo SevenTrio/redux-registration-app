@@ -6,7 +6,6 @@ import Joke from "./Joke";
 
 class JokeContainer extends Component {
     componentDidMount() {
-        console.log("Joke did mount");
         this.props.loadJoke();
     }
 
