@@ -31,7 +31,7 @@ function ClientList({ userList }) {
                             </tr>
                         </thead>
                         <tbody>
-                            {userList.map(user =>
+                            {userList.slice().sort((a, b) => b.timeStamp - a.timeStamp).map(user =>
                                 <tr key={user.id} className="ClientList-TableRow">
                                     <td className="ClientList-TableData">{user.userName}</td>
                                     <td className="ClientList-TableData">{user.userGender}</td>
