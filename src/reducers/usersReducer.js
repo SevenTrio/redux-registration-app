@@ -11,6 +11,7 @@ const mockUsers = [
         withLoyaltyProgram: false,
         userCoupon: "",
         timeStamp: new Date(currentDate.getTime() - Math.floor(Math.random() * Math.floor(5*24*60*60*1000))),
+        id: "b02ea187-bd92-48fa-8fca-d3b588690df1",
     },
     {
         userName: "Nicole Wright",
@@ -19,6 +20,7 @@ const mockUsers = [
         withLoyaltyProgram: true,
         userCoupon: "123456789",
         timeStamp: new Date(currentDate.getTime() - Math.floor(Math.random() * Math.floor(5*24*60*60*1000))),
+        id: "c7273f1e-d774-4ba6-a9ab-5a3dd391830e",
     },
     {
         userName: "Peter Brooks",
@@ -27,6 +29,7 @@ const mockUsers = [
         withLoyaltyProgram: true,
         userCoupon: "123456789",
         timeStamp: new Date(currentDate.getTime() - Math.floor(Math.random() * Math.floor(5*24*60*60*1000))),
+        id: "41d268ad-7b0f-4388-b34d-3bd43b8e33a3",
     },
 ];
 
