@@ -1,5 +1,14 @@
-# Registration app
+## Description
 
-Validated form for registering users and user list
+Form for registering users and user list. Organized its own form validation logic.
 
-Run project: `npm start`
+[Demo version](https://seventrio.github.io/redux-registration-app/)
+
+### Used dependencies and technologies:
+- React
+- Redux
+- Redux Thunk
+- React Router
+- React Transition Group
+- Material-UI
+- Scss
