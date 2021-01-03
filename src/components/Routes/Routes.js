@@ -18,7 +18,7 @@ const Routes = () => {
                 <AboutMe/>
             </Route>
             <Route path="/">
-                <Redirect to="/user-list"/>
+                <Redirect to="/add-user"/>
             </Route>
         </Switch>
     )
