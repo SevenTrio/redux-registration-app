@@ -1,5 +1,4 @@
 import * as types from '../constants/actionsTypes';
-import { validateCardNumber } from "../components/Registration/RegistrationUtils";
 import { addUser } from "./usersActions";
 import { showSuccessMessage } from "./successMessageActions";
 
@@ -65,7 +64,7 @@ export const validateField = (field) => {
             break;
 
         case 'userCreditCard':
-            isValid = validateCardNumber(value.replace(/\s+/g, ''));
+            isValid = /^[0-9]{16}$/.test(value.replace(/\s+/g, ''));
             if (!isValid) errorMessage = "This card is not valid";
             break;
 
