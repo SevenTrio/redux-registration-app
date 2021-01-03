@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/redux-registration-app/static/css/main.fff8b482.chunk.css",
-    "main.js": "/redux-registration-app/static/js/main.f500aab6.chunk.js",
-    "main.js.map": "/redux-registration-app/static/js/main.f500aab6.chunk.js.map",
-    "runtime-main.js": "/redux-registration-app/static/js/runtime-main.1d65dbe9.js",
-    "runtime-main.js.map": "/redux-registration-app/static/js/runtime-main.1d65dbe9.js.map",
-    "static/js/2.928ac1ce.chunk.js": "/redux-registration-app/static/js/2.928ac1ce.chunk.js",
-    "static/js/2.928ac1ce.chunk.js.map": "/redux-registration-app/static/js/2.928ac1ce.chunk.js.map",
-    "index.html": "/redux-registration-app/index.html",
-    "static/css/main.fff8b482.chunk.css.map": "/redux-registration-app/static/css/main.fff8b482.chunk.css.map",
-    "static/js/2.928ac1ce.chunk.js.LICENSE.txt": "/redux-registration-app/static/js/2.928ac1ce.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/redux-registration-app/static/media/background.f32775a0.png"
+    "main.css": "/simple-registration/static/css/main.a8316fcb.chunk.css",
+    "main.js": "/simple-registration/static/js/main.c8b88546.chunk.js",
+    "main.js.map": "/simple-registration/static/js/main.c8b88546.chunk.js.map",
+    "runtime-main.js": "/simple-registration/static/js/runtime-main.f6a0ca85.js",
+    "runtime-main.js.map": "/simple-registration/static/js/runtime-main.f6a0ca85.js.map",
+    "static/js/2.be9580c8.chunk.js": "/simple-registration/static/js/2.be9580c8.chunk.js",
+    "static/js/2.be9580c8.chunk.js.map": "/simple-registration/static/js/2.be9580c8.chunk.js.map",
+    "index.html": "/simple-registration/index.html",
+    "static/css/main.a8316fcb.chunk.css.map": "/simple-registration/static/css/main.a8316fcb.chunk.css.map",
+    "static/js/2.be9580c8.chunk.js.LICENSE.txt": "/simple-registration/static/js/2.be9580c8.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/simple-registration/static/media/background.f32775a0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.1d65dbe9.js",
-    "static/js/2.928ac1ce.chunk.js",
-    "static/css/main.fff8b482.chunk.css",
-    "static/js/main.f500aab6.chunk.js"
+    "static/js/runtime-main.f6a0ca85.js",
+    "static/js/2.be9580c8.chunk.js",
+    "static/css/main.a8316fcb.chunk.css",
+    "static/js/main.c8b88546.chunk.js"
   ]
 }
