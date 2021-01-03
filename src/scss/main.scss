@@ -2,10 +2,6 @@
 @import "reset";
 @import "config";
 
-html {
-  margin-right: calc(-1 * (100vw - 100%));
-}
-
 body {
   overflow-x: hidden;
   min-width: 320px;
