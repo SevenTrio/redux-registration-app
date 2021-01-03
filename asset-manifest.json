@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/redux-registration-app/static/css/main.fff8b482.chunk.css",
-    "main.js": "/redux-registration-app/static/js/main.e2518196.chunk.js",
-    "main.js.map": "/redux-registration-app/static/js/main.e2518196.chunk.js.map",
+    "main.js": "/redux-registration-app/static/js/main.f500aab6.chunk.js",
+    "main.js.map": "/redux-registration-app/static/js/main.f500aab6.chunk.js.map",
     "runtime-main.js": "/redux-registration-app/static/js/runtime-main.1d65dbe9.js",
     "runtime-main.js.map": "/redux-registration-app/static/js/runtime-main.1d65dbe9.js.map",
-    "static/js/2.398fb32e.chunk.js": "/redux-registration-app/static/js/2.398fb32e.chunk.js",
-    "static/js/2.398fb32e.chunk.js.map": "/redux-registration-app/static/js/2.398fb32e.chunk.js.map",
+    "static/js/2.928ac1ce.chunk.js": "/redux-registration-app/static/js/2.928ac1ce.chunk.js",
+    "static/js/2.928ac1ce.chunk.js.map": "/redux-registration-app/static/js/2.928ac1ce.chunk.js.map",
     "index.html": "/redux-registration-app/index.html",
     "static/css/main.fff8b482.chunk.css.map": "/redux-registration-app/static/css/main.fff8b482.chunk.css.map",
-    "static/js/2.398fb32e.chunk.js.LICENSE.txt": "/redux-registration-app/static/js/2.398fb32e.chunk.js.LICENSE.txt",
+    "static/js/2.928ac1ce.chunk.js.LICENSE.txt": "/redux-registration-app/static/js/2.928ac1ce.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/redux-registration-app/static/media/background.f32775a0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1d65dbe9.js",
-    "static/js/2.398fb32e.chunk.js",
+    "static/js/2.928ac1ce.chunk.js",
     "static/css/main.fff8b482.chunk.css",
-    "static/js/main.e2518196.chunk.js"
+    "static/js/main.f500aab6.chunk.js"
   ]
 }
